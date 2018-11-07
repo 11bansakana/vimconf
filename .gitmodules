@@ -10,3 +10,9 @@
 [submodule "repos/vimcolors/atom-dark"]
 	path = repos/vimcolors/atom-dark
 	url = https://github.com/gosukiwi/vim-atom-dark.git
+[submodule "repos/vimcolors/tokyo-metro"]
+	path = repos/vimcolors/tokyo-metro
+	url = https://github.com/koirand/tokyo-metro.vim.git
+[submodule "repos/vimcolors/ice-berg"]
+	path = repos/vimcolors/ice-berg
+	url = https://github.com/cocopon/iceberg.vim.git

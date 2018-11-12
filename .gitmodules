@@ -16,3 +16,6 @@
 [submodule "repos/vimcolors/ice-berg"]
 	path = repos/vimcolors/ice-berg
 	url = https://github.com/cocopon/iceberg.vim.git
+[submodule "repos/vimrc"]
+	path = repos/vimrc
+	url = https://github.com/amix/vimrc.git

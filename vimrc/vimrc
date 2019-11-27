@@ -10,6 +10,10 @@ Plug 'google/vim-glaive'
 Plug 'Raimondi/delimitMate'
 Plug 'fatih/vim-go'
 Plug 'haya14busa/incsearch.vim'
+Plug 'tomasiser/vim-code-dark'
+Plug 'logico-ar/typewriter'
+Plug 'ayu-theme/ayu-vim'
+Plug 'alvan/vim-indexer'
 call plug#end()
 filetype plugin indent on
 " 调用glive for vim-codefmt
@@ -18,7 +22,7 @@ call glaive#Install()
 augroup autoformat_settings
   autocmd FileType bzl AutoFormatBuffer buildifier
   " 工作原因取消掉proto的格式化
-  autocmd FileType c,cpp,javascript AutoFormatBuffer clang-format
+  autocmd FileType c,cpp,cc,javascript AutoFormatBuffer clang-format
   autocmd FileType dart AutoFormatBuffer dartfmt
   autocmd FileType go AutoFormatBuffer gofmt
   autocmd FileType gn AutoFormatBuffer gn
@@ -29,9 +33,12 @@ augroup autoformat_settings
 augroup END
 " 开场启动newcomplete
 let g:neocomplete#enable_at_startup = 1
+let g:go_def_mode = 'godef'
 set t_Co=256
-set bg=dark
-color gruvbox
+"set bg=dark
+set termguicolors
+let ayucolor="mirage"
+color ayu
 set shiftwidth=4
 set tabstop=4
 set nu

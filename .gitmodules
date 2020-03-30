@@ -19,3 +19,9 @@
 [submodule "repos/vimrc"]
 	path = repos/vimrc
 	url = https://github.com/amix/vimrc.git
+[submodule "repos/vimcolors/Zenburn"]
+	path = repos/vimcolors/Zenburn
+	url = https://github.com/jnurmine/Zenburn
+[submodule "repos/vimcolors/tender.vim"]
+	path = repos/vimcolors/tender.vim
+	url = https://github.com/jacoborus/tender.vim.git

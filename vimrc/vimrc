@@ -38,7 +38,7 @@ set t_Co=256
 "set bg=dark
 set termguicolors
 let ayucolor="mirage"
-color ayu
+color zenburn
 set shiftwidth=4
 set tabstop=4
 set nu

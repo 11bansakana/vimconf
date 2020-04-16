@@ -12,8 +12,19 @@ Plug 'fatih/vim-go'
 Plug 'haya14busa/incsearch.vim'
 Plug 'tomasiser/vim-code-dark'
 Plug 'logico-ar/typewriter'
-Plug 'ayu-theme/ayu-vim'
 Plug 'alvan/vim-indexer'
+" Colors
+" See https://github.com/rafi/awesome-vim-colorschemes
+Plug 'ayu-theme/ayu-vim'
+Plug 'nightsense/carbonized'
+Plug 'wadackel/vim-dogrun'
+Plug 'jaredgorski/fogbell.vim'
+Plug 'whatyouhide/vim-gotham'
+Plug 'fcpg/vim-orbital'
+Plug 'rakr/vim-two-firewatch'
+
+
+
 call plug#end()
 filetype plugin indent on
 " 调用glive for vim-codefmt
@@ -22,7 +33,7 @@ call glaive#Install()
 augroup autoformat_settings
   autocmd FileType bzl AutoFormatBuffer buildifier
   " 工作原因取消掉proto的格式化
-  autocmd FileType c,cpp,cc,javascript AutoFormatBuffer clang-format
+  autocmd FileType c,cpp,cc,javascript,proto AutoFormatBuffer clang-format
   autocmd FileType dart AutoFormatBuffer dartfmt
   autocmd FileType go AutoFormatBuffer gofmt
   autocmd FileType gn AutoFormatBuffer gn
@@ -38,7 +49,7 @@ set t_Co=256
 "set bg=dark
 set termguicolors
 let ayucolor="mirage"
-color zenburn
+color tender
 set shiftwidth=4
 set tabstop=4
 set nu
@@ -46,8 +57,8 @@ set cursorcolumn
 set cursorline
 
 " 按键映射
-" NerdTree
 map <C-n> :NERDTreeToggle<CR>
+map <C-g> :GoBuild<CR>
 " incsearch
 set hlsearch
 " inc-search

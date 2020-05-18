@@ -25,6 +25,3 @@
 [submodule "repos/vimcolors/tender.vim"]
 	path = repos/vimcolors/tender.vim
 	url = https://github.com/jacoborus/tender.vim.git
-[submodule "vim-material"]
-	path = vim-material
-	url = https://github.com/hzchirs/vim-material.git

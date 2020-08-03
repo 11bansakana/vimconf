@@ -22,6 +22,10 @@ Plug 'jaredgorski/fogbell.vim'
 Plug 'whatyouhide/vim-gotham'
 Plug 'fcpg/vim-orbital'
 Plug 'rakr/vim-two-firewatch'
+Plug 'Yggdroot/indentLine'
+" Font
+Plug 'ryanoasis/vim-devicons'
+
 
 
 
@@ -39,22 +43,24 @@ augroup autoformat_settings
   autocmd FileType gn AutoFormatBuffer gn
   autocmd FileType html,css,json AutoFormatBuffer js-beautify
   autocmd FileType java AutoFormatBuffer google-java-format
-  autocmd FileType python AutoFormatBuffer yapf
+  "autocmd FileType python AutoFormatBuffer yapf
   " Alternative: autocmd FileType python AutoFormatBuffer autopep8
 augroup END
 " 开场启动newcomplete
 let g:neocomplete#enable_at_startup = 1
 let g:go_def_mode = 'godef'
 set t_Co=256
-"set bg=dark
+set encoding=UTF-8
+set background=light
 set termguicolors
-let ayucolor="mirage"
-color tender
+let ayucolor="light"
+color gruvbox
 set shiftwidth=4
 set tabstop=4
 set nu
 set cursorcolumn
 set cursorline
+set expandtab
 
 " 按键映射
 map <C-n> :NERDTreeToggle<CR>
@@ -65,3 +71,6 @@ set hlsearch
 map /  <Plug>(incsearch-forward)
 map ?  <Plug>(incsearch-backward)
 map g/ <Plug>(incsearch-stay)
+" indent-line
+
+set list lcs=tab:\|\    

@@ -10,9 +10,14 @@ Plug 'google/vim-glaive'
 Plug 'Raimondi/delimitMate'
 Plug 'fatih/vim-go'
 Plug 'haya14busa/incsearch.vim'
+Plug 'haya14busa/incsearch-easymotion.vim'
+Plug 'tpope/vim-fugitive'
+
+Plug 'easymotion/vim-easymotion'
 Plug 'tomasiser/vim-code-dark'
 Plug 'logico-ar/typewriter'
 Plug 'alvan/vim-indexer'
+Plug 'mhinz/vim-signify'
 " Colors
 " See https://github.com/rafi/awesome-vim-colorschemes
 Plug 'ayu-theme/ayu-vim'
@@ -23,8 +28,11 @@ Plug 'whatyouhide/vim-gotham'
 Plug 'fcpg/vim-orbital'
 Plug 'rakr/vim-two-firewatch'
 Plug 'Yggdroot/indentLine'
-" Font
-Plug 'ryanoasis/vim-devicons'
+Plug 'morhetz/gruvbox'
+" Run go get -u github.com/stamblerre/gocode first
+Plug 'Shougo/deoplete.nvim'
+Plug 'deoplete-plugins/deoplete-go', { 'do': 'make'}
+Plug 'ludovicchabant/vim-gutentags'
 
 
 
@@ -46,7 +54,6 @@ augroup autoformat_settings
   "autocmd FileType python AutoFormatBuffer yapf
   " Alternative: autocmd FileType python AutoFormatBuffer autopep8
 augroup END
-" 开场启动newcomplete
 let g:neocomplete#enable_at_startup = 1
 let g:go_def_mode = 'godef'
 set t_Co=256
@@ -63,6 +70,7 @@ set cursorline
 set expandtab
 
 " 按键映射
+let mapleader=","
 map <C-n> :NERDTreeToggle<CR>
 map <C-g> :GoBuild<CR>
 " incsearch
@@ -71,6 +79,13 @@ set hlsearch
 map /  <Plug>(incsearch-forward)
 map ?  <Plug>(incsearch-backward)
 map g/ <Plug>(incsearch-stay)
+map <Leader>f <Plug>(easymotion-bd-f)
 " indent-line
-
 set list lcs=tab:\|\    
+" vim-go autotype
+let g:go_auto_type_info = 1
+let g:deoplete#sources#go#gocode_binary = $GOPATH.'/bin/gocode'
+let g:deoplete#sources#go#sort_class = ['package', 'func', 'type', 'var', 'const']
+" vim-airline
+" gruvbox
+"

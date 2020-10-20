@@ -4,3 +4,7 @@
 + Monofur is beautiful
 + hasklig is also good
 + hermit, cascadia, menlo, jetbrains, source code pro, fira code, proggy
++ [google fonts](https://fonts.google.com/)
+  + Share Tech Mono
+  + Nova Mono
++ DaddyTime Mono

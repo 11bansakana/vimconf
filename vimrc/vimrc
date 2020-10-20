@@ -29,6 +29,7 @@ Plug 'fcpg/vim-orbital'
 Plug 'rakr/vim-two-firewatch'
 Plug 'Yggdroot/indentLine'
 Plug 'morhetz/gruvbox'
+Plug 'jonathanfilip/vim-lucius'
 " Run go get -u github.com/stamblerre/gocode first
 Plug 'Shougo/deoplete.nvim'
 Plug 'deoplete-plugins/deoplete-go', { 'do': 'make'}
@@ -58,10 +59,10 @@ let g:neocomplete#enable_at_startup = 1
 let g:go_def_mode = 'godef'
 set t_Co=256
 set encoding=UTF-8
-set background=light
+set background=dark
 set termguicolors
-let ayucolor="light"
-color gruvbox
+let ayucolor="mirage"
+color ayu
 set shiftwidth=4
 set tabstop=4
 set nu
@@ -89,3 +90,4 @@ let g:deoplete#sources#go#sort_class = ['package', 'func', 'type', 'var', 'const
 " vim-airline
 " gruvbox
 "
+highlight Comment cterm=italic gui=italic

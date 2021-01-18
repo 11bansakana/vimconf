@@ -18,16 +18,18 @@ sudo apt-get install curl
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 # install zsh
-sudo apt-get install zsh
+# sudo apt-get install zsh
 
 # install oh-my-zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+# sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 # install pure zsh prompt
-mkdir -p "$HOME/.zsh"
-git clone https://github.com/sindresorhus/pure.git "$HOME/.zsh/pure"
+# mkdir -p "$HOME/.zsh"
+# git clone https://github.com/sindresorhus/pure.git "$HOME/.zsh/pure"
 
-echo "fpath+=$HOME/.zsh/pure">>$HOME/.zshrc
-echo "autoload -U promptinit; promptinit">>$HOME/.zshrc 
-echo "prompt pure">>$HOME/.zshrc
-source $HOME/.zshrc
+# echo "fpath+=$HOME/.zsh/pure">>$HOME/.zshrc
+# echo "autoload -U promptinit; promptinit">>$HOME/.zshrc 
+# echo "prompt pure">>$HOME/.zshrc
+# source $HOME/.zshrc
+# LS COLORS
+# https://github.com/trapd00r/LS_COLORS

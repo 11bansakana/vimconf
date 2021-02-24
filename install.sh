@@ -33,3 +33,5 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 # source $HOME/.zshrc
 # LS COLORS
 # https://github.com/trapd00r/LS_COLORS
+
+# Install zsh-autosuggestions, zsh-highli

@@ -34,6 +34,10 @@ Plug 'jonathanfilip/vim-lucius'
 Plug 'Shougo/deoplete.nvim'
 Plug 'deoplete-plugins/deoplete-go', { 'do': 'make'}
 Plug 'ludovicchabant/vim-gutentags'
+Plug 'hzchirs/vim-material'
+Plug 'octol/vim-cpp-enhanced-highlight'
+Plug 'caglartoklu/qbcolor.vim'
+Plug 'caglartoklu/borlandp.vim'
 
 
 
@@ -59,10 +63,10 @@ let g:neocomplete#enable_at_startup = 1
 let g:go_def_mode = 'godef'
 set t_Co=256
 set encoding=UTF-8
-set background=dark
+set background=light
 set termguicolors
 let ayucolor="mirage"
-color ayu
+color zenburn
 set shiftwidth=4
 set tabstop=4
 set nu
@@ -88,6 +92,7 @@ let g:go_auto_type_info = 1
 let g:deoplete#sources#go#gocode_binary = $GOPATH.'/bin/gocode'
 let g:deoplete#sources#go#sort_class = ['package', 'func', 'type', 'var', 'const']
 " vim-airline
+let g:airline_theme='material'
 " gruvbox
 "
 highlight Comment cterm=italic gui=italic

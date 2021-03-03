@@ -8,3 +8,4 @@
   + Share Tech Mono
   + Nova Mono
 + DaddyTime Mono
++ [OldSchool font](https://int10h.org/oldschool-pc-fonts/download/#-)

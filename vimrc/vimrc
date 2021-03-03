@@ -37,7 +37,9 @@ Plug 'ludovicchabant/vim-gutentags'
 Plug 'hzchirs/vim-material'
 Plug 'octol/vim-cpp-enhanced-highlight'
 Plug 'caglartoklu/qbcolor.vim'
-Plug 'caglartoklu/borlandp.vim'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-repeat'
+
 
 
 
@@ -63,11 +65,10 @@ let g:neocomplete#enable_at_startup = 1
 let g:go_def_mode = 'godef'
 set t_Co=256
 set encoding=UTF-8
-set background=light
+set background=dark
 set termguicolors
 let ayucolor="mirage"
-" let g:borlandp_bg = "black"
-color borlandp
+color borland
 set shiftwidth=4
 set tabstop=4
 set nu
@@ -117,3 +118,5 @@ let g:gutentags_ctags_extra_args = ['--fields=+niazS', '--extra=+q']
 let g:gutentags_ctags_extra_args += ['--c++-kinds=+pxI']
 let g:gutentags_ctags_extra_args += ['--c-kinds=+px']
 map <c-]> g<c-]>
+let g:indentLine_conceallevel = 0
+
